@@ -14,7 +14,7 @@ class KategoriNode:
         print (f"{indentasi}{simbol}{self.nama}\n")
         
         for sub in self.sub_kategori:
-            hasil = sub.dapatkan_tree_string(level + 1)
+            hasil =f"{indentasi}{simbol}{self.nama}"
         return hasil
 
     def cari_node(self, target_nama):
